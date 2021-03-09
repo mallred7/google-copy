@@ -1,11 +1,40 @@
 body {
     height: 100%;
+    font-size: 14px;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
+a {
+    text-decoration: none;
+    color: #222;;
+}
+
+header, .footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input, button {
+    display: inline-block;
+}
+
+input {
+    width: 100%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 300px auto 10px;   
 }
