@@ -1,18 +1,32 @@
 body {
     height: 100%;
     font-size: 14px;
+    font-family: arial, sans-serif;
 }
 
 a {
     text-decoration: none;
     color: #222;;
+    margin: auto;
 }
 
-header, .footer {
+a:hover {
+    text-decoration: underline;
+}
+
+header, footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 200px auto 30px;   
+}
+
 
 form {
     max-width: 600px;
@@ -26,15 +40,39 @@ input, button {
 
 input {
     width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    height: 34px;
 }
 
-.footer {
+button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    margin: 11px 4px;
+    padding: 0px 16px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+footer {
     position: absolute;
     bottom: 0;
+    background-color: #eee;
+    color: #70757a;
+    height: 36px;
+} 
+
+.left {
+    min-width: 30%;
+    justify-content: flex-start;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    margin: 300px auto 10px;   
+#carbon {
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.right {
+    min-width: 30%;
+    justify-content: flex-end;
 }
